@@ -1,4 +1,4 @@
-# 👋 Hi there, I'm Naki-ym!
+# 👋 Hi there, I'm ymnao!
 
 ## 🛠️ Tech Stack
 ### Frontend
@@ -44,13 +44,13 @@
 ![RSpec](https://img.shields.io/badge/-RSpec-CC0000?style=flat-square&logo=rspec&logoColor=white)
 
 ## 📊 GitHub Profile Summary Cards
-![GitHub Profile Summary Cards](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Naki-ym&theme=radical)
+![GitHub Profile Summary Cards](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ymnao&theme=radical)
 
 ## 📈 Most Used Languages
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Naki-ym&layout=compact&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ymnao&layout=compact&theme=radical)
 
 ## 🏆 GitHub Profile Trophy
-![GitHub Profile Trophy](https://github-profile-trophy.vercel.app/?username=Naki-ym&theme=radical&no-frame=true&no-bg=false&margin-w=4&margin-h=4)
+![GitHub Profile Trophy](https://github-profile-trophy.vercel.app/?username=ymnao&theme=radical&no-frame=true&no-bg=false&margin-w=4&margin-h=4)
 
 ## 📫 Contact
 - 📧 Email: [nakiym.dev@gmail.com](mailto:nakiym.dev@gmail.com)
