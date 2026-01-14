@@ -47,11 +47,9 @@
 ![GitHub Profile Summary Cards](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ymnao&theme=radical)
 
 ## 📈 Most Used Languages
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ymnao&layout=compact&theme=radical)
-
-## 🏆 GitHub Profile Trophy
-![GitHub Profile Trophy](https://github-profile-trophy.vercel.app/?username=ymnao&theme=radical&no-frame=true&no-bg=false&margin-w=4&margin-h=4)
+![Repos Per Language](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ymnao&theme=radical)
+![Most Commit Language](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ymnao&theme=radical)
 
 ## 📫 Contact
 - 📧 Email: [nakiym.dev@gmail.com](mailto:nakiym.dev@gmail.com)
-- 🐦 X: [@nakiymRuby](https://x.com/nakiymRuby)
+- 🐦 X: [@yamanaoRuby](https://x.com/yamanaoRuby)
