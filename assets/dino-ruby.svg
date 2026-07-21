@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 210" width="700" height="210" role="img" aria-label="pixel ruby runner in a terminal">
+  <style>
+    .win     { fill: #161b22; stroke: #30363d; stroke-width: 1.5; }
+    .titlebar{ fill: #21262d; }
+    .prompt  { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 13px; fill: #8b949e; }
+    .cmd     { fill: #c9d1d9; }
+    .dollar  { fill: #7ee787; }
+    .px      { shape-rendering: crispEdges; }
+    .g1 { fill: #ff8fab; } /* ruby light */
+    .g2 { fill: #e0245e; } /* ruby mid   */
+    .g3 { fill: #8b1538; } /* ruby dark  */
+    .c1 { fill: #3fb950; } /* cactus light */
+    .c2 { fill: #2ea043; } /* cactus dark  */
+    .gd { fill: #484f58; } /* ground     */
+    .cl { fill: #30363d; } /* cloud      */
+  </style>
+
+  <!-- Terminal window -->
+  <rect class="win" x="1" y="1" width="698" height="208" rx="8"/>
+  <rect class="titlebar" x="2" y="2" width="696" height="26" rx="7"/>
+  <rect class="titlebar" x="2" y="16" width="696" height="12"/>
+  <circle cx="18" cy="15" r="5" fill="#ff5f56"/>
+  <circle cx="36" cy="15" r="5" fill="#ffbd2e"/>
+  <circle cx="54" cy="15" r="5" fill="#27c93f"/>
+
+  <!-- Prompt line -->
+  <text class="prompt" x="16" y="50"><tspan class="dollar">➜ ~</tspan> <tspan class="cmd">ruby jump.rb</tspan></text>
+  <rect x="128" y="39" width="8" height="14" fill="#7ee787">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Pixel clouds -->
+  <g class="px">
+    <g>
+      <rect class="cl" x="0" y="78" width="28" height="6"/>
+      <rect class="cl" x="6" y="72" width="16" height="6"/>
+      <animateTransform attributeName="transform" type="translate"
+        values="700 0; -40 0" dur="16s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <rect class="cl" x="0" y="96" width="20" height="5"/>
+      <rect class="cl" x="5" y="91" width="10" height="5"/>
+      <animateTransform attributeName="transform" type="translate"
+        values="420 0; -40 0; 700 0; 696 0" keyTimes="0; 0.4; 0.401; 1" dur="22s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Ground: pixel dashes -->
+  <rect class="gd px" x="16" y="176" width="668" height="3"/>
+  <g class="px">
+    <g class="gd">
+      <rect x="20"  y="184" width="12" height="3"/>
+      <rect x="68"  y="184" width="8"  height="3"/>
+      <rect x="116" y="184" width="14" height="3"/>
+      <rect x="164" y="184" width="10" height="3"/>
+      <rect x="212" y="184" width="12" height="3"/>
+      <rect x="260" y="184" width="8"  height="3"/>
+      <rect x="308" y="184" width="14" height="3"/>
+      <rect x="356" y="184" width="10" height="3"/>
+      <rect x="404" y="184" width="12" height="3"/>
+      <rect x="452" y="184" width="8"  height="3"/>
+      <rect x="500" y="184" width="14" height="3"/>
+      <rect x="548" y="184" width="10" height="3"/>
+      <rect x="596" y="184" width="12" height="3"/>
+      <rect x="644" y="184" width="8"  height="3"/>
+      <rect x="692" y="184" width="12" height="3"/>
+    </g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; -48 0" dur="0.24s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Obstacle #1: pixel cactus (small) -->
+  <g>
+    <g class="px">
+      <rect class="c1" x="-4"  y="148" width="8" height="28"/>
+      <rect class="c2" x="0"   y="148" width="4" height="28"/>
+      <rect class="c1" x="-12" y="156" width="8" height="4"/>
+      <rect class="c1" x="-12" y="146" width="4" height="14"/>
+      <rect class="c1" x="4"   y="162" width="8" height="4"/>
+      <rect class="c2" x="8"   y="152" width="4" height="14"/>
+    </g>
+    <animateTransform attributeName="transform" type="translate"
+      values="712 0; -40 0; -40 0" keyTimes="0; 0.5; 1"
+      dur="4.8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Obstacle #2: pixel cactus (big) -->
+  <g>
+    <g class="px">
+      <rect class="c1" x="-6"  y="136" width="12" height="40"/>
+      <rect class="c2" x="0"   y="136" width="6"  height="40"/>
+      <rect class="c1" x="-18" y="148" width="12" height="6"/>
+      <rect class="c1" x="-18" y="134" width="5"  height="20"/>
+      <rect class="c1" x="6"   y="156" width="12" height="6"/>
+      <rect class="c2" x="13"  y="142" width="5"  height="20"/>
+    </g>
+    <animateTransform attributeName="transform" type="translate"
+      values="712 0; 712 0; -40 0" keyTimes="0; 0.5; 1"
+      dur="4.8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Pixel Ruby runner (sprite drawn on 4px grid, feet at y=176) -->
+  <g transform="translate(90, 0)">
+    <g class="px">
+      <!-- row 1 (top): light band -->
+      <rect class="g1" x="-16" y="140" width="32" height="4"/>
+      <!-- row 2 -->
+      <rect class="g1" x="-20" y="144" width="8"  height="4"/>
+      <rect class="g2" x="-12" y="144" width="24" height="4"/>
+      <rect class="g3" x="12"  y="144" width="8"  height="4"/>
+      <!-- row 3 (widest) -->
+      <rect class="g1" x="-24" y="148" width="8"  height="4"/>
+      <rect class="g2" x="-16" y="148" width="32" height="4"/>
+      <rect class="g3" x="16"  y="148" width="8"  height="4"/>
+      <!-- row 4 -->
+      <rect class="g2" x="-20" y="152" width="28" height="4"/>
+      <rect class="g3" x="8"   y="152" width="12" height="4"/>
+      <!-- row 5 -->
+      <rect class="g2" x="-16" y="156" width="20" height="4"/>
+      <rect class="g3" x="4"   y="156" width="12" height="4"/>
+      <!-- row 6 -->
+      <rect class="g2" x="-12" y="160" width="12" height="4"/>
+      <rect class="g3" x="0"   y="160" width="12" height="4"/>
+      <!-- row 7 -->
+      <rect class="g2" x="-8"  y="164" width="8"  height="4"/>
+      <rect class="g3" x="0"   y="164" width="8"  height="4"/>
+      <!-- row 8 -->
+      <rect class="g2" x="-4"  y="168" width="4"  height="4"/>
+      <rect class="g3" x="0"   y="168" width="4"  height="4"/>
+      <!-- row 9 (tip) -->
+      <rect class="g3" x="-2"  y="172" width="4"  height="4"/>
+      <!-- stepped pixel jump: two hops per 4.8s cycle -->
+      <animateTransform attributeName="transform" type="translate" calcMode="discrete"
+        values="0 0; 0 -16; 0 -36; 0 -50; 0 -58; 0 -50; 0 -36; 0 -16; 0 0; 0 -16; 0 -36; 0 -50; 0 -58; 0 -50; 0 -36; 0 -16; 0 0; 0 0"
+        keyTimes="0; 0.35; 0.362; 0.374; 0.386; 0.44; 0.452; 0.464; 0.476; 0.85; 0.862; 0.874; 0.886; 0.94; 0.952; 0.964; 0.976; 1"
+        dur="4.8s" repeatCount="indefinite"/>
+    </g>
+  </g>
+</svg>
