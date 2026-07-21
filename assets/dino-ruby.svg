@@ -44,7 +44,7 @@
       <rect x="0"  y="15" width="5"  height="5"/>
       <rect x="35" y="15" width="5"  height="5"/>
       <animateTransform attributeName="transform" type="translate"
-        values="440 84; -50 84; 700 84; 696 84" keyTimes="0; 0.42; 0.421; 1" dur="22s" repeatCount="indefinite"/>
+        values="700 84; -50 84" dur="18s" begin="-7s" repeatCount="indefinite"/>
     </g>
   </g>
 
