@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Portfolio: yamanao.me">
+  <rect x="1" y="1" width="62" height="62" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <g fill="#d32f2f" shape-rendering="crispEdges">
+    <rect x="28" y="10" width="8" height="4"/>
+    <rect x="24" y="14" width="16" height="4"/>
+    <rect x="20" y="18" width="8" height="4"/>
+    <rect x="36" y="18" width="8" height="4"/>
+    <rect x="16" y="22" width="8" height="4"/>
+    <rect x="40" y="22" width="8" height="4"/>
+    <rect x="12" y="26" width="8" height="4"/>
+    <rect x="44" y="26" width="8" height="4"/>
+    <rect x="8" y="30" width="48" height="4"/>
+    <rect x="12" y="34" width="4" height="4"/>
+    <rect x="48" y="34" width="4" height="4"/>
+    <rect x="12" y="38" width="4" height="4"/>
+    <rect x="24" y="38" width="16" height="4"/>
+    <rect x="48" y="38" width="4" height="4"/>
+    <rect x="12" y="42" width="4" height="4"/>
+    <rect x="24" y="42" width="4" height="4"/>
+    <rect x="36" y="42" width="4" height="4"/>
+    <rect x="48" y="42" width="4" height="4"/>
+    <rect x="12" y="46" width="4" height="4"/>
+    <rect x="24" y="46" width="4" height="4"/>
+    <rect x="36" y="46" width="4" height="4"/>
+    <rect x="48" y="46" width="4" height="4"/>
+    <rect x="12" y="50" width="40" height="4"/>
+  </g>
+</svg>
