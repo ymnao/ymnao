@@ -1,8 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 210" width="700" height="210" role="img" aria-label="pixel ruby runner in a terminal">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" width="700" height="300" role="img" aria-label="yamanao terminal: figlet banner and pixel ruby runner">
   <style>
     .win     { fill: #161b22; stroke: #30363d; stroke-width: 1.5; }
     .titlebar{ fill: #21262d; }
     .prompt  { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 13px; fill: #8b949e; }
+    .logo    { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 13px; }
     .cmd     { fill: #c9d1d9; }
     .dollar  { fill: #7ee787; }
     .px      { shape-rendering: crispEdges; }
@@ -15,16 +16,26 @@
   </style>
 
   <!-- Terminal window -->
-  <rect class="win" x="1" y="1" width="698" height="208" rx="8"/>
+  <rect class="win" x="1" y="1" width="698" height="298" rx="8"/>
   <rect class="titlebar" x="2" y="2" width="696" height="26" rx="7"/>
   <rect class="titlebar" x="2" y="16" width="696" height="12"/>
   <circle cx="18" cy="15" r="5" fill="#ff5f56"/>
   <circle cx="36" cy="15" r="5" fill="#ffbd2e"/>
   <circle cx="54" cy="15" r="5" fill="#27c93f"/>
 
+  <!-- figlet banner -->
+  <text class="prompt" x="16" y="50"><tspan class="dollar">➜ ~</tspan> <tspan class="cmd">figlet yamanao</tspan></text>
+  <g class="logo">
+    <text class="h" x="16" y="74"  xml:space="preserve">██    ██  █████  ███    ███  █████  ███    ██  █████   ██████</text>
+    <text class="h" x="16" y="89"  xml:space="preserve"> ██  ██  ██   ██ ████  ████ ██   ██ ████   ██ ██   ██ ██    ██</text>
+    <text class="m" x="16" y="104" xml:space="preserve">  ████   ███████ ██ ████ ██ ███████ ██ ██  ██ ███████ ██    ██</text>
+    <text class="m" x="16" y="119" xml:space="preserve">   ██    ██   ██ ██  ██  ██ ██   ██ ██  ██ ██ ██   ██ ██    ██</text>
+    <text class="d" x="16" y="134" xml:space="preserve">   ██    ██   ██ ██      ██ ██   ██ ██   ████ ██   ██  ██████</text>
+  </g>
+
   <!-- Prompt line -->
-  <text class="prompt" x="16" y="50"><tspan class="dollar">➜ ~</tspan> <tspan class="cmd">ruby jump.rb</tspan></text>
-  <rect x="142" y="39" width="8" height="14" fill="#7ee787">
+  <text class="prompt" x="16" y="162"><tspan class="dollar">➜ ~</tspan> <tspan class="cmd">ruby jump.rb</tspan></text>
+  <rect x="142" y="151" width="8" height="14" fill="#7ee787">
     <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite"/>
   </rect>
 
@@ -36,7 +47,7 @@
       <rect x="0"  y="15" width="5"  height="5"/>
       <rect x="55" y="15" width="5"  height="5"/>
       <animateTransform attributeName="transform" type="translate"
-        values="700 58; -70 58" dur="16s" repeatCount="indefinite"/>
+        values="700 172; -70 172" dur="16s" repeatCount="indefinite"/>
     </g>
     <g>
       <rect x="20" y="5"  width="10" height="5"/>
@@ -44,27 +55,27 @@
       <rect x="0"  y="15" width="5"  height="5"/>
       <rect x="35" y="15" width="5"  height="5"/>
       <animateTransform attributeName="transform" type="translate"
-        values="700 84; -50 84" dur="18s" begin="-7s" repeatCount="indefinite"/>
+        values="700 196; -50 196" dur="18s" begin="-7s" repeatCount="indefinite"/>
     </g>
   </g>
 
   <!-- Ground line + scrolling dots (▪), same rhythm as the CLI -->
-  <rect class="cl px" x="16" y="176" width="668" height="3"/>
+  <rect class="cl px" x="16" y="268" width="668" height="3"/>
   <g class="px">
     <g class="cl">
-      <rect x="0"   y="184" width="15" height="3"/>
-      <rect x="60"  y="184" width="15" height="3"/>
-      <rect x="120" y="184" width="15" height="3"/>
-      <rect x="180" y="184" width="15" height="3"/>
-      <rect x="240" y="184" width="15" height="3"/>
-      <rect x="300" y="184" width="15" height="3"/>
-      <rect x="360" y="184" width="15" height="3"/>
-      <rect x="420" y="184" width="15" height="3"/>
-      <rect x="480" y="184" width="15" height="3"/>
-      <rect x="540" y="184" width="15" height="3"/>
-      <rect x="600" y="184" width="15" height="3"/>
-      <rect x="660" y="184" width="15" height="3"/>
-      <rect x="720" y="184" width="15" height="3"/>
+      <rect x="0"   y="276" width="15" height="3"/>
+      <rect x="60"  y="276" width="15" height="3"/>
+      <rect x="120" y="276" width="15" height="3"/>
+      <rect x="180" y="276" width="15" height="3"/>
+      <rect x="240" y="276" width="15" height="3"/>
+      <rect x="300" y="276" width="15" height="3"/>
+      <rect x="360" y="276" width="15" height="3"/>
+      <rect x="420" y="276" width="15" height="3"/>
+      <rect x="480" y="276" width="15" height="3"/>
+      <rect x="540" y="276" width="15" height="3"/>
+      <rect x="600" y="276" width="15" height="3"/>
+      <rect x="660" y="276" width="15" height="3"/>
+      <rect x="720" y="276" width="15" height="3"/>
     </g>
     <!-- 60px per 0.192s = 312.5px/s, exactly the cactus speed (750px / 2.4s) -->
     <animateTransform attributeName="transform" type="translate"
@@ -74,11 +85,11 @@
   <!-- Cactus #1 (small, 5x4 cells): crosses in first half of the 4.8s cycle -->
   <g>
     <g class="px">
-      <rect class="g" x="10" y="141" width="5" height="35"/>
-      <rect class="g" x="0"  y="141" width="5" height="15"/>
-      <rect class="g" x="5"  y="156" width="5" height="5"/>
-      <rect class="G" x="20" y="151" width="5" height="15"/>
-      <rect class="G" x="15" y="166" width="5" height="5"/>
+      <rect class="g" x="10" y="233" width="5" height="35"/>
+      <rect class="g" x="0"  y="233" width="5" height="15"/>
+      <rect class="g" x="5"  y="248" width="5" height="5"/>
+      <rect class="G" x="20" y="243" width="5" height="15"/>
+      <rect class="G" x="15" y="258" width="5" height="5"/>
     </g>
     <animateTransform attributeName="transform" type="translate"
       values="710 0; -40 0; -40 0" keyTimes="0; 0.5; 1"
@@ -88,11 +99,11 @@
   <!-- Cactus #2 (big, 5x6 cells): crosses in second half -->
   <g>
     <g class="px">
-      <rect class="g" x="10" y="121" width="5" height="55"/>
-      <rect class="g" x="0"  y="131" width="5" height="15"/>
-      <rect class="g" x="5"  y="146" width="5" height="5"/>
-      <rect class="G" x="20" y="141" width="5" height="15"/>
-      <rect class="G" x="15" y="156" width="5" height="5"/>
+      <rect class="g" x="10" y="213" width="5" height="55"/>
+      <rect class="g" x="0"  y="223" width="5" height="15"/>
+      <rect class="g" x="5"  y="238" width="5" height="5"/>
+      <rect class="G" x="20" y="233" width="5" height="15"/>
+      <rect class="G" x="15" y="248" width="5" height="5"/>
     </g>
     <animateTransform attributeName="transform" type="translate"
       values="710 0; 710 0; -40 0" keyTimes="0; 0.5; 1"
@@ -103,23 +114,23 @@
   <g transform="translate(63, 0)">
     <g class="px">
       <!-- light -->
-      <rect class="h" x="10" y="136" width="35" height="5"/>
-      <rect class="h" x="0"  y="146" width="5"  height="5"/>
-      <rect class="h" x="5"  y="141" width="10" height="10"/>
+      <rect class="h" x="10" y="228" width="35" height="5"/>
+      <rect class="h" x="0"  y="238" width="5"  height="5"/>
+      <rect class="h" x="5"  y="233" width="10" height="10"/>
       <!-- mid -->
-      <rect class="m" x="15" y="141" width="30" height="10"/>
-      <rect class="m" x="5"  y="151" width="5"  height="5"/>
-      <rect class="m" x="10" y="151" width="30" height="10"/>
-      <rect class="m" x="15" y="161" width="5"  height="5"/>
-      <rect class="m" x="20" y="161" width="5"  height="10"/>
+      <rect class="m" x="15" y="233" width="30" height="10"/>
+      <rect class="m" x="5"  y="243" width="5"  height="5"/>
+      <rect class="m" x="10" y="243" width="30" height="10"/>
+      <rect class="m" x="15" y="253" width="5"  height="5"/>
+      <rect class="m" x="20" y="253" width="5"  height="10"/>
       <!-- dark -->
-      <rect class="d" x="45" y="141" width="5"  height="10"/>
-      <rect class="d" x="50" y="146" width="5"  height="5"/>
-      <rect class="d" x="40" y="151" width="5"  height="10"/>
-      <rect class="d" x="45" y="151" width="5"  height="5"/>
-      <rect class="d" x="25" y="161" width="10" height="10"/>
-      <rect class="d" x="35" y="161" width="5"  height="5"/>
-      <rect class="d" x="25" y="171" width="5"  height="5"/>
+      <rect class="d" x="45" y="233" width="5"  height="10"/>
+      <rect class="d" x="50" y="238" width="5"  height="5"/>
+      <rect class="d" x="40" y="243" width="5"  height="10"/>
+      <rect class="d" x="45" y="243" width="5"  height="5"/>
+      <rect class="d" x="25" y="253" width="10" height="10"/>
+      <rect class="d" x="35" y="253" width="5"  height="5"/>
+      <rect class="d" x="25" y="263" width="5"  height="5"/>
       <!-- stepped pixel jump: two hops per 4.8s cycle -->
       <animateTransform attributeName="transform" type="translate" calcMode="discrete"
         values="0 0; 0 -20; 0 -45; 0 -62; 0 -72; 0 -62; 0 -45; 0 -20; 0 0; 0 -20; 0 -45; 0 -62; 0 -72; 0 -62; 0 -45; 0 -20; 0 0; 0 0"
