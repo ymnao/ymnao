@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" width="700" height="380" role="img" aria-label="yamanao terminal: figlet banner and pixel ruby runner">
+  <style>
+    .win     { fill: #161b22; stroke: #30363d; stroke-width: 1.5; }
+    .titlebar{ fill: #21262d; }
+    .prompt  { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 13px; fill: #8b949e; }
+    .logo    { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 13px; }
+    .cmd     { fill: #c9d1d9; }
+    .dollar  { fill: #7ee787; }
+    .px      { shape-rendering: crispEdges; }
+    .h  { fill: #ff8fab; } /* ruby light */
+    .m  { fill: #e0245e; } /* ruby mid   */
+    .d  { fill: #8b1538; } /* ruby dark  */
+    .g  { fill: #3fb950; } /* cactus     */
+    .G  { fill: #2ea043; } /* cactus dark*/
+    .cl { fill: #6e7681; } /* gray, same as the CLI C_DIM */
+  </style>
+
+  <!-- Terminal window -->
+  <rect class="win" x="1" y="1" width="698" height="378" rx="8"/>
+  <rect class="titlebar" x="2" y="2" width="696" height="26" rx="7"/>
+  <rect class="titlebar" x="2" y="16" width="696" height="12"/>
+  <circle cx="18" cy="15" r="5" fill="#ff5f56"/>
+  <circle cx="36" cy="15" r="5" fill="#ffbd2e"/>
+  <circle cx="54" cy="15" r="5" fill="#27c93f"/>
+
+  <!-- figlet banner -->
+  <text class="prompt" x="16" y="50"><tspan class="dollar">➜ ~</tspan> <tspan class="cmd">figlet yamanao</tspan></text>
+  <!-- Per-row colors only: a real terminal can color per character, never inside a glyph -->
+  <g class="logo">
+    <text fill="#ff8fab" x="16" y="72"  xml:space="preserve">██╗   ██╗ █████╗ ███╗   ███╗ █████╗ ███╗   ██╗ █████╗  ██████╗ </text>
+    <text fill="#ff6b93" x="16" y="85"  xml:space="preserve">╚██╗ ██╔╝██╔══██╗████╗ ████║██╔══██╗████╗  ██║██╔══██╗██╔═══██╗</text>
+    <text fill="#f0447a" x="16" y="98"  xml:space="preserve"> ╚████╔╝ ███████║██╔████╔██║███████║██╔██╗ ██║███████║██║   ██║</text>
+    <text fill="#d92c63" x="16" y="111" xml:space="preserve">  ╚██╔╝  ██╔══██║██║╚██╔╝██║██╔══██║██║╚██╗██║██╔══██║██║   ██║</text>
+    <text fill="#b3204e" x="16" y="124" xml:space="preserve">   ██║   ██║  ██║██║ ╚═╝ ██║██║  ██║██║ ╚████║██║  ██║╚██████╔╝</text>
+    <text fill="#8b1538" x="16" y="137" xml:space="preserve">   ╚═╝   ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝   ╚═╝╚═╝  ╚═╝ ╚═════╝ </text>
+  </g>
+
+  <!-- Prompt line -->
+  <text class="prompt" x="16" y="162"><tspan class="dollar">➜ ~</tspan> <tspan class="cmd">ruby jump.rb</tspan></text>
+  <rect x="142" y="151" width="8" height="14" fill="#7ee787">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Clouds: same sprites as the CLI (base bar + right-offset puff) -->
+  <g class="px cl">
+    <g>
+      <rect x="42" y="7"  width="28" height="7"/>
+      <rect x="7"  y="14" width="70" height="14"/>
+      <rect x="0"  y="21" width="7"  height="7"/>
+      <rect x="77" y="21" width="7"  height="7"/>
+      <animateTransform attributeName="transform" type="translate"
+        values="700 185; -90 185" dur="16s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <rect x="28" y="7"  width="14" height="7"/>
+      <rect x="7"  y="14" width="42" height="14"/>
+      <rect x="0"  y="21" width="7"  height="7"/>
+      <rect x="49" y="21" width="7"  height="7"/>
+      <animateTransform attributeName="transform" type="translate"
+        values="700 218; -60 218" dur="18s" begin="-7s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Ground line + scrolling dots (▪), same rhythm as the CLI -->
+  <rect class="cl px" x="16" y="340" width="668" height="3"/>
+  <g class="px">
+    <g class="cl">
+      <rect x="0"   y="348" width="21" height="4"/>
+      <rect x="84"  y="348" width="21" height="4"/>
+      <rect x="168" y="348" width="21" height="4"/>
+      <rect x="252" y="348" width="21" height="4"/>
+      <rect x="336" y="348" width="21" height="4"/>
+      <rect x="420" y="348" width="21" height="4"/>
+      <rect x="504" y="348" width="21" height="4"/>
+      <rect x="588" y="348" width="21" height="4"/>
+      <rect x="672" y="348" width="21" height="4"/>
+      <rect x="756" y="348" width="21" height="4"/>
+    </g>
+    <!-- 84px per 0.269s = 312.5px/s, exactly the cactus speed (750px / 2.4s) -->
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; -84 0" dur="0.269s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Cactus #1 (small, 5x4 cells, 7px unit): crosses in first half of the 4.8s cycle -->
+  <g>
+    <g class="px">
+      <rect class="g" x="14" y="291" width="7" height="49"/>
+      <rect class="g" x="0"  y="291" width="7" height="21"/>
+      <rect class="g" x="7"  y="312" width="7" height="7"/>
+      <rect class="G" x="28" y="305" width="7" height="21"/>
+      <rect class="G" x="21" y="326" width="7" height="7"/>
+    </g>
+    <animateTransform attributeName="transform" type="translate"
+      values="710 0; -50 0; -50 0" keyTimes="0; 0.5; 1"
+      dur="4.8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Cactus #2 (big, 5x6 cells, 7px unit): crosses in second half -->
+  <g>
+    <g class="px">
+      <rect class="g" x="14" y="263" width="7" height="77"/>
+      <rect class="g" x="0"  y="277" width="7" height="21"/>
+      <rect class="g" x="7"  y="298" width="7" height="7"/>
+      <rect class="G" x="28" y="291" width="7" height="21"/>
+      <rect class="G" x="21" y="312" width="7" height="7"/>
+    </g>
+    <animateTransform attributeName="transform" type="translate"
+      values="710 0; 710 0; -50 0" keyTimes="0; 0.5; 1"
+      dur="4.8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Ruby gem (11x5 cells, 7px unit, same sprite as the CLI), tip resting on the ground -->
+  <g transform="translate(55, 0)">
+    <g class="px">
+      <!-- light -->
+      <rect class="h" x="14" y="284" width="49" height="7"/>
+      <rect class="h" x="0"  y="298" width="7"  height="7"/>
+      <rect class="h" x="7"  y="291" width="14" height="14"/>
+      <!-- mid -->
+      <rect class="m" x="21" y="291" width="42" height="14"/>
+      <rect class="m" x="7"  y="305" width="7"  height="7"/>
+      <rect class="m" x="14" y="305" width="42" height="14"/>
+      <rect class="m" x="21" y="319" width="7"  height="7"/>
+      <rect class="m" x="28" y="319" width="7"  height="14"/>
+      <!-- dark -->
+      <rect class="d" x="63" y="291" width="7"  height="14"/>
+      <rect class="d" x="70" y="298" width="7"  height="7"/>
+      <rect class="d" x="56" y="305" width="7"  height="14"/>
+      <rect class="d" x="63" y="305" width="7"  height="7"/>
+      <rect class="d" x="35" y="319" width="14" height="14"/>
+      <rect class="d" x="49" y="319" width="7"  height="7"/>
+      <rect class="d" x="35" y="333" width="7"  height="7"/>
+      <!-- stepped pixel jump: two hops per 4.8s cycle -->
+      <animateTransform attributeName="transform" type="translate" calcMode="discrete"
+        values="0 0; 0 -28; 0 -63; 0 -87; 0 -101; 0 -87; 0 -63; 0 -28; 0 0; 0 -28; 0 -63; 0 -87; 0 -101; 0 -87; 0 -63; 0 -28; 0 0; 0 0"
+        keyTimes="0; 0.35; 0.362; 0.374; 0.386; 0.44; 0.452; 0.464; 0.476; 0.85; 0.862; 0.874; 0.886; 0.94; 0.952; 0.964; 0.976; 1"
+        dur="4.8s" repeatCount="indefinite"/>
+    </g>
+  </g>
+</svg>
