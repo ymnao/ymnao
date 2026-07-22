@@ -142,7 +142,7 @@ def merged_rects(rows)
     open = open.select { |key, _| current.key?(key) }
     current.each_key { |key| open[key] ||= y }
   end
-  result.sort_by { |_, y0, *| y0 }
+  result.sort_by { |x, y0, *| [y0, x] }
 end
 
 return unless __FILE__ == $0

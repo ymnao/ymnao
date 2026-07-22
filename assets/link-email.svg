@@ -7,13 +7,13 @@
     <rect x="48" y="14" width="8" height="8" fill="#feb409"/>
     <rect x="8" y="18" width="16" height="4" fill="#fc413d"/>
     <rect x="40" y="18" width="8" height="4" fill="#fd7a25"/>
+    <rect x="8" y="22" width="8" height="28" fill="#fc413d"/>
     <rect x="20" y="22" width="8" height="4" fill="#fc413d"/>
     <rect x="36" y="22" width="8" height="4" fill="#fd7a25"/>
     <rect x="48" y="22" width="8" height="4" fill="#b9cf2d"/>
-    <rect x="8" y="22" width="8" height="28" fill="#fc413d"/>
-    <rect x="48" y="26" width="8" height="4" fill="#1ebc5d"/>
-    <rect x="32" y="26" width="8" height="4" fill="#fd7a25"/>
     <rect x="24" y="26" width="8" height="4" fill="#fc413d"/>
+    <rect x="32" y="26" width="8" height="4" fill="#fd7a25"/>
+    <rect x="48" y="26" width="8" height="4" fill="#1ebc5d"/>
     <rect x="28" y="30" width="4" height="4" fill="#fc413d"/>
     <rect x="32" y="30" width="4" height="4" fill="#fd7a25"/>
     <rect x="48" y="30" width="8" height="8" fill="#04abae"/>
