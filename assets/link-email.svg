@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Email: yamanao.dev@gmail.com">
+  <rect x="1" y="1" width="62" height="62" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <g shape-rendering="crispEdges">
+    <rect x="8" y="14" width="8" height="4" fill="#ff5b8c"/>
+    <rect x="16" y="14" width="4" height="4" fill="#fc413d"/>
+    <rect x="44" y="14" width="4" height="4" fill="#fd7a25"/>
+    <rect x="48" y="14" width="8" height="8" fill="#feb409"/>
+    <rect x="8" y="18" width="16" height="4" fill="#fc413d"/>
+    <rect x="40" y="18" width="8" height="4" fill="#fd7a25"/>
+    <rect x="8" y="22" width="8" height="28" fill="#fc413d"/>
+    <rect x="20" y="22" width="8" height="4" fill="#fc413d"/>
+    <rect x="36" y="22" width="8" height="4" fill="#fd7a25"/>
+    <rect x="48" y="22" width="8" height="4" fill="#b9cf2d"/>
+    <rect x="24" y="26" width="8" height="4" fill="#fc413d"/>
+    <rect x="32" y="26" width="8" height="4" fill="#fd7a25"/>
+    <rect x="48" y="26" width="8" height="4" fill="#1ebc5d"/>
+    <rect x="28" y="30" width="4" height="4" fill="#fc413d"/>
+    <rect x="32" y="30" width="4" height="4" fill="#fd7a25"/>
+    <rect x="48" y="30" width="8" height="8" fill="#04abae"/>
+    <rect x="48" y="38" width="8" height="4" fill="#169fd5"/>
+    <rect x="48" y="42" width="8" height="8" fill="#3690f5"/>
+  </g>
+</svg>
