@@ -48,7 +48,7 @@ ICONS = {
   },
   # connpass favicon: 赤 (#D52E02) のチケット + 白 (W) の C
   "connpass" => {
-    label: "connpass: connpass.com/user/nakiymRuby",
+    label: "connpass: connpass.com/user/nakiymRuby/",
     palette: { "#" => "#d52e02", "W" => "#ffffff" },
     rows: [
       "############",
@@ -144,6 +144,8 @@ def merged_rects(rows)
   end
   result.sort_by { |_, y0, *| y0 }
 end
+
+return unless __FILE__ == $0
 
 dir = ARGV[0] || File.expand_path("../assets", __dir__)
 ICONS.each do |name, spec|
