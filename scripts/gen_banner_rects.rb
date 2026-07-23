@@ -89,12 +89,9 @@ banner = ROWS.each_with_index.map do |(color, line), row|
 end.flatten.join("\n")
 
 svg = File.read(SVG_PATH, encoding: "UTF-8")
-replaced = svg.sub(
-  /(<!-- BEGIN figlet-rects[^>]*-->\n).*?(  <!-- END figlet-rects -->)/m,
-  "\\1#{banner}\n\\2"
-)
-raise "markers not found in #{SVG_PATH}" if replaced == svg
+markers = /(<!-- BEGIN figlet-rects[^>]*-->\n).*?(  <!-- END figlet-rects -->)/m
+raise "markers not found in #{SVG_PATH}" unless svg.match?(markers)
 
-File.write(SVG_PATH, replaced)
+File.write(SVG_PATH, svg.sub(markers, "\\1#{banner}\n\\2"))
 rect_count = banner.scan("<rect").size
 puts "dino-ruby.svg: figlet banner -> #{rect_count} rects"
